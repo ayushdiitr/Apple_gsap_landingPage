@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --gradient-color: linear-gradient(
+    to bottom right,
+    #0894ff 0%,
+    #c959dd 34%,
+    #ff2e54 68%,
+    #ff9004
+  );
+}
+
+@font-face {
+    font-family: "SemiBold";
+    src: url("/fonts/semibold.otf");
+}
+
+@theme {
+    --color-dark-100: #86868b;
+    --font-semibold: "SemiBold";
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #000;
+    color: var(--color-dark-100);
+    font-family: var(--font-semibold);
+}
+
+#utility flex-center {
+    @apply flex items-center justify-center;
+}
+
+@layer components {
+    header {
+        @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black min-h-[7vh];
+    }
+}
