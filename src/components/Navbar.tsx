@@ -2,7 +2,6 @@ import { navLinks } from "../constants";
 
 const Navbar = () => {
 
-    
     return (
         <header>
             <nav>
